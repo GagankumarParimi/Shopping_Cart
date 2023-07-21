@@ -16,7 +16,7 @@ The React Shopping Cart Project is a web application developed using React.js, d
 # Getting Started
 To run this application, you will need to have Node.js and npm (or Yarn) installed on your computer. Once you have installed these dependencies, you can clone the repository and install the necessary packages by running the following commands in your terminal:
 ```
-git clone https://github.com/yourusername/e-commerce-app.git
+git clone https://github.com/yourusername/Shopping_cart.git
 cd shopsters
 npm install (or yarn install)
 ```
