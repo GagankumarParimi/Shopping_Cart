@@ -9,12 +9,12 @@ function Cart() {
   let total =  grandToatal();
   return (
    <>
-      <div className='flex justify-center my-6'>
+      <div className='flex justify-center  my-6'>
         <p className='text-2xl text-black font-bold'>CART ITEMS</p>
       </div>
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col ml-10 lg:ml-0 lg:items-center'>
       {
-        PRODUCTS.map(product =>{
+        PRODUCTS.map((product,index )=>{
           if(cartitems[product.id] !== 0)
           {
             return (
@@ -23,7 +23,7 @@ function Cart() {
               </>
             )
           }
-          return null
+          return    <React.Fragment key={index}></React.Fragment>
         })
       }
     </div>
@@ -31,8 +31,8 @@ function Cart() {
     <div className='flex justify-center my-4'>
       {total>0 ?
        <div className='flex flex-col'>
-          <p className='text-2xl font-bold'>Total Amount :$ {total}</p>
-         <button className='bg-black px-6 py-2 text-slate-50' onClick={()=>setButtonText('Your Order has been Placed Thank you!')}>{buttonText}</button>
+          <p className='text-xl lg:text-2xl font-bold'>Total Amount :$ {total}</p>
+         <button className='bg-black px-6 py-2 text-slate-50 items-center' onClick={()=>setButtonText('Your Order has been Placed Thank you!')}>{buttonText}</button>
        </div>
        :
       <div>

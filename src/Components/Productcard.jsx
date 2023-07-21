@@ -9,9 +9,9 @@ function Productcard(props) {
     const {id,productName , price , productImage} = props.data
     const { addtoCart , cartitems}= useContext(shopcontext)
   return ( 
-    <div className="max-w-xs rounded overflow-hidden shadow-lg">
+    <div className="max-w-xs border-2 border-y-black rounded overflow-hidden shadow-lg">
     <img
-      className="max-w"
+      className="max-w "
       src={productImage}
       alt="imag"
     />
